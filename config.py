@@ -1,14 +1,10 @@
-import re
 import os
 from os import getenv
-
 from dotenv import load_dotenv
-from pyrogram import filters
 
-# ✅ Load .env file from absolute path
-load_dotenv(dotenv_path="/root/Maomao/.env")
+dotenv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env")
+load_dotenv(dotenv_path=dotenv_path)
 
-# ✅ Debug print (you can remove later)
 print("Loaded API_ID:", getenv("API_ID"))
 
 # Get this value from my.telegram.org/apps
