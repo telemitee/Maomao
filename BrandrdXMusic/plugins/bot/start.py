@@ -63,10 +63,11 @@ async def start_pm(client, message: Message, _):
             searched_text = _["start_6"].format(
                 title, duration, views, published, channellink, channel, app.mention
             )
-            key = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("My Owner", url="https://t.me/your_username")
+            
+           key = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("My Owner", url="https://t.me/RealOwnerUsername")
                     ],
                 ]
             )
