@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from pyrogram import filters
 
 load_dotenv()
+load_dotenv(dotenv_path="/full/path/to/.env")
 
 # Get this value from my.telegram.org/apps
 API_ID = int(getenv("API_ID", None))
